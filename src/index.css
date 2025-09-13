@@ -486,3 +486,18 @@ footer {
     border-color: red !important;
     box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.25);
 }
+
+.product-container {
+  display: flex;          /* activa flexbox */
+  flex-wrap: wrap;        /* permite que se muevan a la siguiente fila si no caben */
+  gap: 20px;              /* espacio entre productos */
+  justify-content: flex-start; /* alineación horizontal */
+}
+
+.product-card-description {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* 3 líneas x 1.5em line-height */
+  line-height: 1.5em;
+}
